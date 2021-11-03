@@ -1,12 +1,13 @@
 {
-  "name": "role_permission",
+  "name": "api_imc",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.ts",
   "license": "MIT",
   "scripts": {
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
-    "dev": "ts-node-dev src/server.js",
-    "server": "ts-node-dev -r tsconfig-paths/register --inspect --transpileOnly --ignore-watch node_modules src/server.ts"
+    "build": "tsc",
+    "dev": "ts-node-dev --inspect  --ignore-watch node_modules src/server.ts",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -18,7 +19,8 @@
     "reflect-metadata": "^0.1.13",
     "tsyringe": "^4.2.0",
     "typeorm": "^0.2.34",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
