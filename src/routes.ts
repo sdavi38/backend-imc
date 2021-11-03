@@ -13,7 +13,7 @@ import { can, is } from "./middleware/permissions";
 
 const routes = Router();
 
-routes.post("/user", 
+routes.post("/users", 
  
 
   new CreateUserController().handle);
