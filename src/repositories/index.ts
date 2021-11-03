@@ -7,7 +7,6 @@ import {Order} from '../entities/Order';
 import { Company} from '../entities/Company';
 import {OrdersProducts} from '../entities/OrderProducts'
 
-
 export const UserRepository = () => {
   return getRepository(User);
 };
