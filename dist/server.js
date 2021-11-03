@@ -8,6 +8,6 @@ const app_1 = __importDefault(require("./app"));
 require("reflect-metadata");
 require("./database");
 dotenv_1.default.config();
-app_1.default.listen(process.env.PORT || 5000, () => {
+app_1.default.listen(process.env.PORT || 3333, () => {
     console.log('🏃 Running Server');
 });
