@@ -11,3 +11,9 @@
     "migrationsDir": "./src/database/migrations"
   }
 }
+
+//Local banco local
+//Heroku banco nuvem
+
+
+
