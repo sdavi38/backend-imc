@@ -11,7 +11,9 @@ type UserRequest = {
 };
 
 export class CreateUserService {
-  async execute({ password, email, name}: UserRequest): Promise<Error | User> {
+  
+  
+    async execute({ password, email, name}: UserRequest): Promise<Error | User> {
     const existUser = await UserRepository().findOne({ email });
 
     if (existUser) {

@@ -1,5 +1,5 @@
 import { Entity, Column, CreateDateColumn, PrimaryColumn, OneToMany } from "typeorm";
-import { BaseEntity } from "./BaseEntity";
+import { BaseEntity } from "./BaseEntity.js";
 import {OrdersProducts} from './OrderProducts'
 
 @Entity("products")

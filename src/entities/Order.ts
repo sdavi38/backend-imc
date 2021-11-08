@@ -11,7 +11,7 @@ import {
   
   import {Company} from './Company';
   import {OrdersProducts} from './OrderProducts'
-  import { BaseEntity } from "./BaseEntity";
+  import { BaseEntity } from "./BaseEntity.js";
    
   @Entity('orders')
   export class Order  extends BaseEntity{

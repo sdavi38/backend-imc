@@ -7,6 +7,7 @@ type PermissionRequest = {
 };
 
 export class CreatePermissionService {
+
   async execute({
     name,
     description,

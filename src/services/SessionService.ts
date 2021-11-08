@@ -1,4 +1,4 @@
-import { compare } from "bcryptjs";
+  import { compare } from "bcryptjs";
 import { sign } from "jsonwebtoken";
 import { UserRepository } from "../repositories";
 

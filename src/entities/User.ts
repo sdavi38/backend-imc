@@ -7,7 +7,7 @@ import {
   ManyToMany,
   RelationId,
 } from "typeorm";
-import { BaseEntity } from "./BaseEntity";
+import { BaseEntity } from "./BaseEntity.js";
 import { Permission } from "./Permission";
 import { Role } from "./Role";
 

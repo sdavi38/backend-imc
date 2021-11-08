@@ -1,20 +1,17 @@
-console.log('process.env.DATABASEE_URL :>> ', process.env.DATABASE_URL);
-module.exports = {
+{
   "type": "postgres",
-  "url": process.env.DATABASE_URL,
-  "entities": [
-    "dist/models/**/*.js"
- ],
- "migrations": [
-  "dist/database/migrations/**/*.js"
-],
- "cli":{
-  "migrationsDir": [
-    "src/database/migrations/"
-  ],
-  "entitiesDir": "src/models"
+  "port": 5432,
+  "host": "localhost",
+  "username": "postgres",
+  "password": "1199",
+  "database": "imc",
+  "entities": ["./src/entities/*.ts"],
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
   }
 }
+
 
 
 
